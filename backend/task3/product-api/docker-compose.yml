@@ -1,0 +1,12 @@
+name: product-api
+
+services:
+  product-db:
+    image: postgres
+    container_name: product-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: products
+    ports:
+      - '5432:5432'
